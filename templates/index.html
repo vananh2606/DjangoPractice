@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <h1>Home</h1>
+    <a href="{% url 'about' %}">Click to go to about</a>
+    <br>
+    <a href="{% url 'contact' %}">Click to go to contact</a>
+    <br>
+    <a href="{% url 'form' %}">Click to go to form</a>
+    <br>
+    <button onclick="buttonFunction()">Click me</button>
+    <img src="{% static 'assets/image.jpg' %}" alt="">
+
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
